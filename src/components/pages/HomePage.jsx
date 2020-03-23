@@ -47,7 +47,7 @@ export default class HomePage extends React.Component{
 		
 		list.map((item)=>{
 			value = (value.replace(" ","%20"))
-			 url = "/api/product_scrapper/scrape/"+item+"?keyword="+value+"&filter="+this.state.filter_select;
+			 url = "https://django-ml-backend.herokuapp.com/api/product_scrapper/scrape/"+item+"?keyword="+value+"&filter="+this.state.filter_select;
 			axios({
 				url:url
 			}).then(res => {

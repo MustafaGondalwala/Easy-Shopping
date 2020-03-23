@@ -28,7 +28,7 @@ export  class SearchBar extends React.Component{
 	     	loading:true
 		})
 		// const url = "https://django-ml-backend.herokuapp.com/api/timetracker/autosuggestion"
-		const url = "http://localhost:5959/api/product_scrapper/s/autosuggestion?query="+this.state.data.search_keyword
+		const url = "https://django-ml-backend.herokuapp.com/api/product_scrapper/s/autosuggestion?query="+this.state.data.search_keyword
 		axios({
 			url:url
 		}).then((res)=>{
