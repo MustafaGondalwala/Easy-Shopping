@@ -14,7 +14,7 @@ export class SellerSelect extends React.Component{
 			      				<table className="ui table celled unstackable">
 			      					<tr>
 			      						<td>All</td>
-			      						<td><input type="radio" name="vendor_select" value="all" onChange={this.props.RadioChange}  /></td>
+			      						<td><input defaultChecked type="radio" name="vendor_select" value="all" onChange={this.props.RadioChange}  /></td>
 			      					</tr>
 			      					<tr>
 			      						<td>Flipkart</td>
@@ -30,7 +30,7 @@ export class SellerSelect extends React.Component{
 			      					</tr>
 			      					<tr>
 			      						<td>Snapdeal</td>
-			      						<td><input defaultChecked type="radio" name="vendor_select" value="snapdeal" onChange={this.props.RadioChange} /></td>
+			      						<td><input  type="radio" name="vendor_select" value="snapdeal" onChange={this.props.RadioChange} /></td>
 			      					</tr>
 			      				</table>
 			      			</Container>

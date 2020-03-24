@@ -16,9 +16,7 @@ export default class HomePage extends React.Component{
 		"filter_select":"relevance"
 	}
 	
-	componentDidMount(){
-		this.fetch_keywords("mask")
-	}
+	
 	updateViewType = (view_type) => {
 		this.setState({
 			view_type:view_type
